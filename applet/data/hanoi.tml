@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <declarations>
+    <attributeDecl name="name" type="String" />
+    <attributeDecl name="text" type="String" />
+    <attributeDecl name="operator" type="String" />
+    <attributeDecl name="weight1" type="String" />
+    <attributeDecl name="weight2" type="String" />
+    <attributeDecl name="weight3" type="String" />
+    <attributeDecl name="weight4" type="String" />
+  </declarations>
+  <branch>
+    <branch>
+      <branch>
+        *hanoi x0 x1 x2 x3 x4 = MV D0 x5 x3 x6
+        <branch>
+          *hanoi (D x0) x1 x2 x3 x4 = MV D0 x5 x3 (MV (D D0) x6 x3 (MV D0 x6 x5 x7))	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3
+          <leaf>
+            *fun17 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)	fun13 (D x0) x1 x2 x3 x4 = D0	fun14 (D x0) x1 x2 x3 x4 = x2	fun15 (D x0) x1 x2 x3 x4 = x2	fun16 (D x0) x1 x2 x3 x4 = x2	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun13 (D x0) x1 x2 x3 x4) (fun14 (D x0) x1 x2 x3 x4) (fun15 (D x0) x1 x2 x3 x4) (fun16 (D x0) x1 x2 x3 x4) (fun17 (D x0) x1 x2 x3 x4)
+            <attribute name="name" value="H" />
+            <attribute name="weight4" value="3.0" />
+            <attribute name="weight3" value="5" />
+            <attribute name="weight2" value="3" />
+            <attribute name="weight1" value="2" />
+            <attribute name="operator" value="MTCH" />
+            <attribute name="text" value="*fun17 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)&#x9;fun13 (D x0) x1 x2 x3 x4 = D0&#x9;fun14 (D x0) x1 x2 x3 x4 = x2&#x9;fun15 (D x0) x1 x2 x3 x4 = x2&#x9;fun16 (D x0) x1 x2 x3 x4 = x2&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun13 (D x0) x1 x2 x3 x4) (fun14 (D x0) x1 x2 x3 x4) (fun15 (D x0) x1 x2 x3 x4) (fun16 (D x0) x1 x2 x3 x4) (fun17 (D x0) x1 x2 x3 x4)" />
+          </leaf>
+          <branch>
+            *fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (MV D0 x5 x2 x6)	fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+            <leaf>
+              fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	fun22 (D (D0)) x0 x1 x2 x3 = MV (D D0) x0 x2 (MV D0 x0 x1 x3)	fun22 (D (D (D0))) x0 x1 x2 x3 = MV (D (D D0)) x0 x2 (MV D0 x2 x1 (MV (D D0) x0 x1 (MV D0 x0 x2 x3)))	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+              <attribute name="name" value="H" />
+              <attribute name="weight4" value="0.0" />
+              <attribute name="weight3" value="7" />
+              <attribute name="weight2" value="0" />
+              <attribute name="weight1" value="3" />
+              <attribute name="operator" value="PART" />
+              <attribute name="text" value="fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;fun22 (D (D0)) x0 x1 x2 x3 = MV (D D0) x0 x2 (MV D0 x0 x1 x3)&#x9;fun22 (D (D (D0))) x0 x1 x2 x3 = MV (D (D D0)) x0 x2 (MV D0 x2 x1 (MV (D D0) x0 x1 (MV D0 x0 x2 x3)))&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+            </leaf>
+            <branch>
+              *fun25 (D x0) x1 x2 x3 x4 = MV D0 x5 x2 x6	fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+              <leaf>
+                *fun30 (D x0) x1 x2 x3 x4 = x5	fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)	fun25 (D x0) x1 x2 x3 x4 = hanoi (fun26 (D x0) x1 x2 x3 x4) (fun27 (D x0) x1 x2 x3 x4) (fun28 (D x0) x1 x2 x3 x4) (fun29 (D x0) x1 x2 x3 x4) (fun30 (D x0) x1 x2 x3 x4)	fun26 (D x0) x1 x2 x3 x4 = D0	fun27 (D x0) x1 x2 x3 x4 = x3	fun28 (D x0) x1 x2 x3 x4 = x2	fun29 (D x0) x1 x2 x3 x4 = x2	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+                <attribute name="name" value="H" />
+                <attribute name="weight4" value="1.0" />
+                <attribute name="weight3" value="10" />
+                <attribute name="weight2" value="1" />
+                <attribute name="weight1" value="2" />
+                <attribute name="operator" value="MTCH" />
+                <attribute name="text" value="*fun30 (D x0) x1 x2 x3 x4 = x5&#x9;fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)&#x9;fun25 (D x0) x1 x2 x3 x4 = hanoi (fun26 (D x0) x1 x2 x3 x4) (fun27 (D x0) x1 x2 x3 x4) (fun28 (D x0) x1 x2 x3 x4) (fun29 (D x0) x1 x2 x3 x4) (fun30 (D x0) x1 x2 x3 x4)&#x9;fun26 (D x0) x1 x2 x3 x4 = D0&#x9;fun27 (D x0) x1 x2 x3 x4 = x3&#x9;fun28 (D x0) x1 x2 x3 x4 = x2&#x9;fun29 (D x0) x1 x2 x3 x4 = x2&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+              </leaf>
+              <leaf>
+                fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)	fun25 (D x0) x1 x2 x3 x4 = hanoi (fun31 (D x0) x1 x2 x3 x4) (fun32 (D x0) x1 x2 x3 x4) (fun33 (D x0) x1 x2 x3 x4) (fun34 (D x0) x1 x2 x3 x4) (fun35 (D x0) x1 x2 x3 x4)	fun31 (D x0) x1 x2 x3 x4 = x0	fun32 (D x0) x1 x2 x3 x4 = x2	fun33 (D x0) x1 x2 x3 x4 = x3	fun34 (D x0) x1 x2 x3 x4 = x2	fun35 (D x0) x1 x2 x3 x4 = x4	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+                <attribute name="name" value="H" />
+                <attribute name="weight4" value="0.0" />
+                <attribute name="weight3" value="9" />
+                <attribute name="weight2" value="0" />
+                <attribute name="weight1" value="2" />
+                <attribute name="operator" value="MTCH" />
+                <attribute name="text" value="fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)&#x9;fun25 (D x0) x1 x2 x3 x4 = hanoi (fun31 (D x0) x1 x2 x3 x4) (fun32 (D x0) x1 x2 x3 x4) (fun33 (D x0) x1 x2 x3 x4) (fun34 (D x0) x1 x2 x3 x4) (fun35 (D x0) x1 x2 x3 x4)&#x9;fun31 (D x0) x1 x2 x3 x4 = x0&#x9;fun32 (D x0) x1 x2 x3 x4 = x2&#x9;fun33 (D x0) x1 x2 x3 x4 = x3&#x9;fun34 (D x0) x1 x2 x3 x4 = x2&#x9;fun35 (D x0) x1 x2 x3 x4 = x4&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+              </leaf>
+              <leaf>
+                fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)	fun25 (D (D0)) x0 x1 x2 x3 = MV D0 x0 x1 x3	fun25 (D (D (D0))) x0 x1 x2 x3 = MV D0 x2 x1 (MV (D D0) x0 x1 (MV D0 x0 x2 x3))	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+                <attribute name="name" value="H" />
+                <attribute name="weight4" value="0.0" />
+                <attribute name="weight3" value="8" />
+                <attribute name="weight2" value="0" />
+                <attribute name="weight1" value="3" />
+                <attribute name="operator" value="PART" />
+                <attribute name="text" value="fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)&#x9;fun25 (D (D0)) x0 x1 x2 x3 = MV D0 x0 x1 x3&#x9;fun25 (D (D (D0))) x0 x1 x2 x3 = MV D0 x2 x1 (MV (D D0) x0 x1 (MV D0 x0 x2 x3))&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+              </leaf>
+              <leaf>
+                *fun36 (D x0) x1 x2 x3 x4 = x5	*fun37 (D x0) x1 x2 x3 x4 = x5	fun18 (D x0) x1 x2 x3 x4 = x0	fun19 (D x0) x1 x2 x3 x4 = x2	fun20 (D x0) x1 x2 x3 x4 = x1	fun21 (D x0) x1 x2 x3 x4 = x2	fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)	fun25 (D x0) x1 x2 x3 x4 = MV D0 (fun36 (D x0) x1 x2 x3 x4) x2 (fun37 (D x0) x1 x2 x3 x4)	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)
+                <attribute name="name" value="H" />
+                <attribute name="weight4" value="1.0" />
+                <attribute name="weight3" value="9" />
+                <attribute name="weight2" value="2" />
+                <attribute name="weight1" value="2" />
+                <attribute name="operator" value="CALL" />
+                <attribute name="text" value="*fun36 (D x0) x1 x2 x3 x4 = x5&#x9;*fun37 (D x0) x1 x2 x3 x4 = x5&#x9;fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)&#x9;fun25 (D x0) x1 x2 x3 x4 = MV D0 (fun36 (D x0) x1 x2 x3 x4) x2 (fun37 (D x0) x1 x2 x3 x4)&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+              </leaf>
+              <attribute name="name" value="8" />
+              <attribute name="weight4" value="2.0" />
+              <attribute name="weight3" value="7" />
+              <attribute name="weight2" value="2" />
+              <attribute name="weight1" value="2" />
+              <attribute name="operator" value="CALL" />
+              <attribute name="text" value="*fun25 (D x0) x1 x2 x3 x4 = MV D0 x5 x2 x6&#x9;fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (fun25 (D x0) x1 x2 x3 x4)&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+            </branch>
+            <attribute name="name" value="7" />
+            <attribute name="weight4" value="2.0" />
+            <attribute name="weight3" value="6" />
+            <attribute name="weight2" value="2" />
+            <attribute name="weight1" value="2" />
+            <attribute name="operator" value="MTCH" />
+            <attribute name="text" value="*fun22 (D x0) x1 x2 x3 x4 = MV (D x0) x1 x3 (MV D0 x5 x2 x6)&#x9;fun18 (D x0) x1 x2 x3 x4 = x0&#x9;fun19 (D x0) x1 x2 x3 x4 = x2&#x9;fun20 (D x0) x1 x2 x3 x4 = x1&#x9;fun21 (D x0) x1 x2 x3 x4 = x2&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = hanoi (fun18 (D x0) x1 x2 x3 x4) (fun19 (D x0) x1 x2 x3 x4) (fun20 (D x0) x1 x2 x3 x4) (fun21 (D x0) x1 x2 x3 x4) (fun22 (D x0) x1 x2 x3 x4)" />
+          </branch>
+          <leaf>
+            hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D (D0)) x0 x1 x2 x3 = MV D0 x1 x2 (MV (D D0) x0 x2 (MV D0 x0 x1 x3))	hanoi (D (D (D0))) x0 x1 x2 x3 = MV D0 x0 x2 (MV (D D0) x1 x2 (MV D0 x1 x0 (MV (D (D D0)) x0 x2 (MV D0 x2 x1 (MV (D D0) x0 x1 (MV D0 x0 x2 x3))))))
+            <attribute name="name" value="H" />
+            <attribute name="weight4" value="0.0" />
+            <attribute name="weight3" value="3" />
+            <attribute name="weight2" value="0" />
+            <attribute name="weight1" value="3" />
+            <attribute name="operator" value="PART" />
+            <attribute name="text" value="hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D (D0)) x0 x1 x2 x3 = MV D0 x1 x2 (MV (D D0) x0 x2 (MV D0 x0 x1 x3))&#x9;hanoi (D (D (D0))) x0 x1 x2 x3 = MV D0 x0 x2 (MV (D D0) x1 x2 (MV D0 x1 x0 (MV (D (D D0)) x0 x2 (MV D0 x2 x1 (MV (D D0) x0 x1 (MV D0 x0 x2 x3))))))" />
+          </leaf>
+          <leaf>
+            *fun23 (D x0) x1 x2 x3 x4 = x5	*fun24 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)	hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3	hanoi (D x0) x1 x2 x3 x4 = MV D0 (fun23 (D x0) x1 x2 x3 x4) x3 (fun24 (D x0) x1 x2 x3 x4)
+            <attribute name="name" value="H" />
+            <attribute name="weight4" value="2.0" />
+            <attribute name="weight3" value="4" />
+            <attribute name="weight2" value="4" />
+            <attribute name="weight1" value="2" />
+            <attribute name="operator" value="CALL" />
+            <attribute name="text" value="*fun23 (D x0) x1 x2 x3 x4 = x5&#x9;*fun24 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3&#x9;hanoi (D x0) x1 x2 x3 x4 = MV D0 (fun23 (D x0) x1 x2 x3 x4) x3 (fun24 (D x0) x1 x2 x3 x4)" />
+          </leaf>
+          <attribute name="name" value="6" />
+          <attribute name="weight4" value="3.0" />
+          <attribute name="weight3" value="2" />
+          <attribute name="weight2" value="3" />
+          <attribute name="weight1" value="2" />
+          <attribute name="operator" value="PART" />
+          <attribute name="text" value="*hanoi (D x0) x1 x2 x3 x4 = MV D0 x5 x3 (MV (D D0) x6 x3 (MV D0 x6 x5 x7))&#x9;hanoi (D0) x0 x1 x2 x3 = MV D0 x0 x2 x3" />
+        </branch>
+        <branch>
+          *fun1 x0 x1 x2 x3 x4 = x5	*fun2 x0 x1 x2 x3 x4 = x5	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+          <branch>
+            *fun1 (D x0) x1 x2 x3 x4 = x5	*fun2 x0 x1 x2 x3 x4 = x5	fun1 (D0) x0 x1 x2 x3 = x0	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+            <branch>
+              *fun2 x0 x1 x2 x3 x4 = x5	fun1 (D0) x0 x1 x2 x3 = x0	fun1 (D x0) x1 x2 x3 x4 = fun1 (fun3 (D x0) x1 x2 x3 x4) (fun4 (D x0) x1 x2 x3 x4) (fun5 (D x0) x1 x2 x3 x4) (fun6 (D x0) x1 x2 x3 x4) (fun7 (D x0) x1 x2 x3 x4)	fun3 (D x0) x1 x2 x3 x4 = D0	fun4 (D x0) x1 x2 x3 x4 = x2	fun5 (D x0) x1 x2 x3 x4 = x2	fun6 (D x0) x1 x2 x3 x4 = x2	fun7 (D x0) x1 x2 x3 x4 = x4	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+              <leaf>
+                *fun2 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)	fun1 (D0) x0 x1 x2 x3 = x0	fun1 (D x0) x1 x2 x3 x4 = fun1 (fun3 (D x0) x1 x2 x3 x4) (fun4 (D x0) x1 x2 x3 x4) (fun5 (D x0) x1 x2 x3 x4) (fun6 (D x0) x1 x2 x3 x4) (fun7 (D x0) x1 x2 x3 x4)	fun2 (D0) x0 x1 x2 x3 = x3	fun3 (D x0) x1 x2 x3 x4 = D0	fun4 (D x0) x1 x2 x3 x4 = x2	fun5 (D x0) x1 x2 x3 x4 = x2	fun6 (D x0) x1 x2 x3 x4 = x2	fun7 (D x0) x1 x2 x3 x4 = x4	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+                <attribute name="name" value="H" />
+                <attribute name="weight4" value="3.0" />
+                <attribute name="weight3" value="8" />
+                <attribute name="weight2" value="3" />
+                <attribute name="weight1" value="2" />
+                <attribute name="operator" value="PART" />
+                <attribute name="text" value="*fun2 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)&#x9;fun1 (D0) x0 x1 x2 x3 = x0&#x9;fun1 (D x0) x1 x2 x3 x4 = fun1 (fun3 (D x0) x1 x2 x3 x4) (fun4 (D x0) x1 x2 x3 x4) (fun5 (D x0) x1 x2 x3 x4) (fun6 (D x0) x1 x2 x3 x4) (fun7 (D x0) x1 x2 x3 x4)&#x9;fun2 (D0) x0 x1 x2 x3 = x3&#x9;fun3 (D x0) x1 x2 x3 x4 = D0&#x9;fun4 (D x0) x1 x2 x3 x4 = x2&#x9;fun5 (D x0) x1 x2 x3 x4 = x2&#x9;fun6 (D x0) x1 x2 x3 x4 = x2&#x9;fun7 (D x0) x1 x2 x3 x4 = x4&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+              </leaf>
+              <attribute name="name" value="4" />
+              <attribute name="weight4" value="1.0" />
+              <attribute name="weight3" value="7" />
+              <attribute name="weight2" value="1" />
+              <attribute name="weight1" value="2" />
+              <attribute name="operator" value="MTCH" />
+              <attribute name="text" value="*fun2 x0 x1 x2 x3 x4 = x5&#x9;fun1 (D0) x0 x1 x2 x3 = x0&#x9;fun1 (D x0) x1 x2 x3 x4 = fun1 (fun3 (D x0) x1 x2 x3 x4) (fun4 (D x0) x1 x2 x3 x4) (fun5 (D x0) x1 x2 x3 x4) (fun6 (D x0) x1 x2 x3 x4) (fun7 (D x0) x1 x2 x3 x4)&#x9;fun3 (D x0) x1 x2 x3 x4 = D0&#x9;fun4 (D x0) x1 x2 x3 x4 = x2&#x9;fun5 (D x0) x1 x2 x3 x4 = x2&#x9;fun6 (D x0) x1 x2 x3 x4 = x2&#x9;fun7 (D x0) x1 x2 x3 x4 = x4&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+            </branch>
+            <branch>
+              *fun2 x0 x1 x2 x3 x4 = x5	fun1 (D0) x0 x1 x2 x3 = x0	fun1 (D x0) x1 x2 x3 x4 = fun1 (fun8 (D x0) x1 x2 x3 x4) (fun9 (D x0) x1 x2 x3 x4) (fun10 (D x0) x1 x2 x3 x4) (fun11 (D x0) x1 x2 x3 x4) (fun12 (D x0) x1 x2 x3 x4)	fun10 (D x0) x1 x2 x3 x4 = x1	fun11 (D x0) x1 x2 x3 x4 = x2	fun12 (D x0) x1 x2 x3 x4 = x4	fun8 (D x0) x1 x2 x3 x4 = x0	fun9 (D x0) x1 x2 x3 x4 = x2	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+              <leaf>
+                *fun2 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)	fun1 (D0) x0 x1 x2 x3 = x0	fun1 (D x0) x1 x2 x3 x4 = fun1 (fun8 (D x0) x1 x2 x3 x4) (fun9 (D x0) x1 x2 x3 x4) (fun10 (D x0) x1 x2 x3 x4) (fun11 (D x0) x1 x2 x3 x4) (fun12 (D x0) x1 x2 x3 x4)	fun10 (D x0) x1 x2 x3 x4 = x1	fun11 (D x0) x1 x2 x3 x4 = x2	fun12 (D x0) x1 x2 x3 x4 = x4	fun2 (D0) x0 x1 x2 x3 = x3	fun8 (D x0) x1 x2 x3 x4 = x0	fun9 (D x0) x1 x2 x3 x4 = x2	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+                <attribute name="name" value="H" />
+                <attribute name="weight4" value="3.0" />
+                <attribute name="weight3" value="9" />
+                <attribute name="weight2" value="3" />
+                <attribute name="weight1" value="2" />
+                <attribute name="operator" value="PART" />
+                <attribute name="text" value="*fun2 (D x0) x1 x2 x3 x4 = MV (D D0) x5 x3 (MV D0 x5 x6 x7)&#x9;fun1 (D0) x0 x1 x2 x3 = x0&#x9;fun1 (D x0) x1 x2 x3 x4 = fun1 (fun8 (D x0) x1 x2 x3 x4) (fun9 (D x0) x1 x2 x3 x4) (fun10 (D x0) x1 x2 x3 x4) (fun11 (D x0) x1 x2 x3 x4) (fun12 (D x0) x1 x2 x3 x4)&#x9;fun10 (D x0) x1 x2 x3 x4 = x1&#x9;fun11 (D x0) x1 x2 x3 x4 = x2&#x9;fun12 (D x0) x1 x2 x3 x4 = x4&#x9;fun2 (D0) x0 x1 x2 x3 = x3&#x9;fun8 (D x0) x1 x2 x3 x4 = x0&#x9;fun9 (D x0) x1 x2 x3 x4 = x2&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+              </leaf>
+              <attribute name="name" value="5" />
+              <attribute name="weight4" value="1.0" />
+              <attribute name="weight3" value="8" />
+              <attribute name="weight2" value="1" />
+              <attribute name="weight1" value="2" />
+              <attribute name="operator" value="MTCH" />
+              <attribute name="text" value="*fun2 x0 x1 x2 x3 x4 = x5&#x9;fun1 (D0) x0 x1 x2 x3 = x0&#x9;fun1 (D x0) x1 x2 x3 x4 = fun1 (fun8 (D x0) x1 x2 x3 x4) (fun9 (D x0) x1 x2 x3 x4) (fun10 (D x0) x1 x2 x3 x4) (fun11 (D x0) x1 x2 x3 x4) (fun12 (D x0) x1 x2 x3 x4)&#x9;fun10 (D x0) x1 x2 x3 x4 = x1&#x9;fun11 (D x0) x1 x2 x3 x4 = x2&#x9;fun12 (D x0) x1 x2 x3 x4 = x4&#x9;fun8 (D x0) x1 x2 x3 x4 = x0&#x9;fun9 (D x0) x1 x2 x3 x4 = x2&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+            </branch>
+            <leaf>
+              *fun2 x0 x1 x2 x3 x4 = x5	fun1 (D0) x0 x1 x2 x3 = x0	fun1 (D (D0)) x0 x1 x2 x3 = x1	fun1 (D (D (D0))) x0 x1 x2 x3 = x0	hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)
+              <attribute name="name" value="H" />
+              <attribute name="weight4" value="1.0" />
+              <attribute name="weight3" value="5" />
+              <attribute name="weight2" value="1" />
+              <attribute name="weight1" value="3" />
+              <attribute name="operator" value="PART" />
+              <attribute name="text" value="*fun2 x0 x1 x2 x3 x4 = x5&#x9;fun1 (D0) x0 x1 x2 x3 = x0&#x9;fun1 (D (D0)) x0 x1 x2 x3 = x1&#x9;fun1 (D (D (D0))) x0 x1 x2 x3 = x0&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+            </leaf>
+            <attribute name="name" value="3" />
+            <attribute name="weight4" value="1.0" />
+            <attribute name="weight3" value="4" />
+            <attribute name="weight2" value="2" />
+            <attribute name="weight1" value="2" />
+            <attribute name="operator" value="PART" />
+            <attribute name="text" value="*fun1 (D x0) x1 x2 x3 x4 = x5&#x9;*fun2 x0 x1 x2 x3 x4 = x5&#x9;fun1 (D0) x0 x1 x2 x3 = x0&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+          </branch>
+          <attribute name="name" value="2" />
+          <attribute name="weight4" value="1.0" />
+          <attribute name="weight3" value="3" />
+          <attribute name="weight2" value="2" />
+          <attribute name="weight1" value="1" />
+          <attribute name="operator" value="CALL" />
+          <attribute name="text" value="*fun1 x0 x1 x2 x3 x4 = x5&#x9;*fun2 x0 x1 x2 x3 x4 = x5&#x9;hanoi x0 x1 x2 x3 x4 = MV D0 (fun1 x0 x1 x2 x3 x4) x3 (fun2 x0 x1 x2 x3 x4)" />
+        </branch>
+        <attribute name="name" value="1" />
+        <attribute name="weight4" value="2.0" />
+        <attribute name="weight3" value="1" />
+        <attribute name="weight2" value="2" />
+        <attribute name="weight1" value="1" />
+        <attribute name="operator" value="" />
+        <attribute name="text" value="*hanoi x0 x1 x2 x3 x4 = MV D0 x5 x3 x6" />
+      </branch>
+      <attribute name="operator" value="" />
+      <attribute name="name" value="hanoi" />
+      <attribute name="text" value="" />
+    </branch>
+    <attribute name="operator" value="" />
+    <attribute name="name" value="targets" />
+    <attribute name="text" value="" />
+  </branch>
+</tree>
+

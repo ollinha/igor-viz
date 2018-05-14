@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta name="keywords" content="" />
+
+<meta name="description" content="" />
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<title>IGOR2+ Search Tree Viewer</title>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+	<div id="header">
+
+		<div id="logo">
+
+			<h1><a href="#">igor2</a><br /><p>search tree viewer</p></h1>
+
+		</div>
+
+	</div>
+
+	<!-- end #header -->
+
+	<div id="menu">
+
+	</div>
+
+	<!-- end #menu -->
+
+	<div id="page">
+
+		<div id="content">
+
+			<h2 class="title">User manual</h2>
+            
+            <p>The user manual can also be <a href="manual.pdf">downloaded</a> as PDF.</p>
+
+            <p>If you want to obtain the source code and/or the runnable jar file, please <a href="contact.php">contact</a> me.
+
+            The program is written in Java, so you need at least Java 1.6 (Download: <a href="http://java.com">http://java.com</a>).
+
+            The istviewer.jar file contains all classes that are needed to run the program (including the external libraries).</p>
+
+            <h3>Getting started</h3>
+
+            <ol>
+
+            	<li>Save the istviewer.jar file to your computer.</li>
+
+                <li>Start the command line and go to the folder containing the istviewer.jar file.</li>
+
+                <li>Type istviewer.jar [path of the log file] to start the parsing and visualization.<br />
+
+                <em>Example Windows:</em><br />
+
+                <code>C:\Programs>istviewer.jar “D:\Eigene Dateien\Logfiles\hanoi.log”</code></li>
+
+                <li>If you want console messages to be displayed, you have to type java -jar at the beginning of the command:<br />
+
+                <code>C:\Programs>java –jar istviewer.jar “D:\Eigene Dateien\Logfiles\hanoi.log”</code></li>
+
+                <li>If you need some information about the program, type java -jar istviewer.jar -h.<br />
+
+                <code>C:\Programs>java –jar istviewer.jar -h</code></li>
+
+                <li>If you want to read the user manual, type java -jar istviewer.jar -m.<br />
+
+                <code>C:\Programs>java –jar istviewer.jar -m</code></li>
+
+            </ol>
+
+            <h3>Frame components</h3>
+
+            <img src="images/elements.png" alt="screenshot"/>
+
+            <ol>
+
+            	<li>Name of the function.</li>
+                
+                <li>Orientation selection.</li>
+
+            	<li>Weight selection.</li>
+                
+                <li>Search field.</li>
+                
+                <li>Node information. Displays the hypotheses of the selected node.</li>
+
+            	<li>Node. The number shows the order in which the nodes were expanded. The color stands for the node weight.
+
+                In comparison to branch nodes leaf nodes are displayed smaller.</li>
+
+            	<li>Edge. The stroke styles differ according to the operator that was used to create the child hypotheses.</li>
+
+            	<li>Result Node. The result nodes are accented by a thicker border.</li>
+
+            </ol>
+
+            <h3>Controls</h3>
+
+            <p>The <em>spinners</em> in the top left (2) and top right (3) corners are used to select the orientation and weight to display.</p>
+            
+            <p>The <em>search field</em> in the top center (4) is used to search for a node with a specific number.</p>
+
+            <p>A <em>single left click</em> on a node shows the according hypotheses in the node info field (5) and expands the children of the node.</p>
+
+            <p>A <em>double left click</em> on a node expands the complete subtree of the node.</p>
+
+            <p>A <em>single right click</em> on a node collapses all children of the node.</p>
+
+            <p><em>Hovering</em> over nodes shows a tool tip containing the node weight. Hovering over edges shows a tool tip containing the operator.</p>
+
+            <p>The tree can be <em>dragged</em> and <em>dropped</em> inside the frame by clicking and holding the left mouse button beside the tree view.</p>
+
+            <p>The tree can be <em>zoomed</em> by rolling the wheel button.</p>
+
+		</div>
+
+		<!-- end #content -->
+
+		<div id="sidebar">
+
+			<ul>
+
+				<li>
+
+					<ul>
+
+						<li><a href="index.html">Home</a></li>
+
+						<li><a href="demo.html">Demo</a></li>
+
+						<li><a href="doc/index.html">Documentation</a></li>
+
+						<li><a href="manual.html">User Manual</a></li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+		<!-- end #sidebar -->
+
+	</div>
+
+	<!-- end #page -->
+
+	<div id="footer">
+
+		<p><a href="contact.php">contact</a><a href="imprint.html">imprint</a><a href="http://www.yanenko.de">&copy; 2010 olga yanenko</a></p>
+
+	</div>
+
+	<!-- end #footer -->
+
+</body>
+
+</html>
+
